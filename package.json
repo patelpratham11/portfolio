@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@eatsjobs/type-writer": "^1.0.0",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "gatsby": "^5.9.1",
@@ -23,6 +24,7 @@
     "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-typed": "^1.2.0"
   }
 }

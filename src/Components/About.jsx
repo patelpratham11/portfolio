@@ -69,15 +69,8 @@ export default function About() {
               <Card variant="outlined">
                 <CardContent>
                   <Typography variant="subtitle1">
-                    My name is Pratham Patel and I am a Junior at the University
-                    of Pittburgh. I am currently studying Computer Science with
-                    a minor in Chemistry. Outside of classes, I love to read,
-                    solve puzzles, work my mind, workout, and go on runs. I love
-                    a good challenge, whether that's in the form of a math
-                    question or a puzzle or if it's in the form of a CS project,
-                    I'll get the job done. I have created this website as a way
-                    to showcase my skills, my interests, my goals, what I have
-                    accomplished, and most importantly, myself.
+                    My name is Pratham Patel and I am a senior at the University
+                    of Pittburgh. I study CS with a minor in Chemistry, which allows me to grow in many diverse ways. I'm an incoming intern at Protiviti, I've been an intern at PNC, and I've been an undergraduate researcher for the past 2.5 years. Outside of creating things and tinkering with new technologies, I love photography and editing. The hero picture for this site's landing page is one of my personal favorites!
                   </Typography>
                 </CardContent>
                 <CardMedia>

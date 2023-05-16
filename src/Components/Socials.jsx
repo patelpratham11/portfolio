@@ -8,7 +8,7 @@ const socials = [
         icon: GitHub, url: "https://github.com/patelpratham11"
     }, 
     {
-        icon: LinkedIn, url: "https://linkedin.com/patelpratham11"
+        icon: LinkedIn, url: "https://www.linkedin.com/in/patelpratham11/"
     }
 ]
 

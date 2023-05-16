@@ -57,19 +57,25 @@ const experiences = [
     name: "Protiviti",
     description:
       "I am an in-coming Technology Consultant Intern at Protiviti inc. This summer I will be working with the Emerging Technology Group (ETG). I plan on learning more about networking, client-facing roles, building and maintaining relationships, and becoming well-versed in the different groups of technology and the needs the industry faces right now",
-    tags: ["here", "hello"],
+    tags: ["ETG", "Consulting"],
   },
   {
     name: "PNC",
     description:
-      "I also had the opportunity to spend a summer as an intern at PNC bank. I was a part of the Enterprise Data Risk Management (EDRM) Strategies Team. For 10-weeks, I was placed on this team in order to collaborate, present, identify, report, and manage risks that were surrounding the data. Our main objective was to effective manage and mitigate risks surrounding incomplete and inaccurate data. I assisted new programs set out by PNC regarding data use, data risks, and data quality. I worked heavily with the Analytics Competency Center and Model Risk Management throughout my various projects.My main project was to help collect and reconcile data ahead of an AI/ML audit that was coming in August 2022. I also played an integral part in chartering a new pilot program to keep track of which LOBs are using which platforms. We heavily leveraged database-related technologies such as Excel, Hadoop, and some SQL.",
-    tags: ["here", "hello"],
+      "I was a part of the Enterprise Data Risk Management (EDRM) Strategies Team where for 10-weeks, I collaborated, presented, identified, reported, and managed risks that were surrounding the data. I assisted new programs set out by PNC regarding data use, data risks, and data quality including a new pilot program to more effectively collect AI/ML related data across the organization. We heavily leveraged database-related technologies such as Excel, Hadoop, and some SQL.",
+    tags: ["Data", "Risk", "MS Excel"],
+  },
+  {
+    name: "Mathy Lab",
+    description:
+      "I have worked under Dr. Hansruedi Mathys at the University of Pittsburgh's Neurobiology department as one of the lead tech students. I developed many scripts in order to analyze datasets upwards of 50gb. We worked with Single Cell RNA Sequencing data from the ROSMAP cohort from Rush University in order to understand the cellular and molecular reasons behind Alzheimer's Disease and variances within phenotypic expressions.",
+    tags: ["R", "Python"],
   },
   {
     name: "Code Ninjas",
     description:
       "I had the opportunity to teach young children how to create video games in JavaScript. We used Code Ninja's Game Development Platform (GDP). I primarily worked with children between the ages of 5 and 13 with a focus on the older children who were creating more complex video games. I collaborated with the other Senseis and made sure that all of the children were being helped but also learning. As this was during COVID, we had to introduce a hybrid environment children and was able to help them hands-on.",
-    tags: ["here", "hello"],
+    tags: ["JS", "Teaching"],
   },
 ];
 

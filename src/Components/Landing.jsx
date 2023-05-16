@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) =>({
     gridContainer:{
         height: "100%",
         zIndex: 100,
-        marginTop: 200
+        marginTop: 180
     }, 
     name:{
         backgroundColor: "rgba(0,0,0,0.4)", 

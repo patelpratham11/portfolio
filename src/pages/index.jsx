@@ -21,7 +21,7 @@ const darkTheme = createTheme({
     
     fontFamily: "system-ui",
     h5:{
-        color: "#51A3A3"
+        color: "#F39A9D"
     },
     subtitle2:{
       color: "#51A3A3"

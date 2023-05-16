@@ -62,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: "2px 3px 20px 10px black"
     },
   },
+  pittInfo:{
+    textAlign: "left",
+    marginBottom: 10
+  }
   
 }));
 
@@ -101,7 +105,8 @@ export default function Education() {
                     <Typography variant="h5">
                       University of Pittsburgh
                     </Typography>
-                    <Typography variant="subtitle1">Computer Science major with Chemistry minor</Typography>
+                    <Typography variant="subtitle1" className={styles.pittInfo}> Major: Computer Science </Typography>
+                    <Typography variant="subtitle1" className={styles.pittInfo}> Minor: Chemistry</Typography>
                     <Chip label="GPA: 3.4"></Chip>
                   </CardContent>
                 </Card>

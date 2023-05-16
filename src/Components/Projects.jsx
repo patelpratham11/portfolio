@@ -60,57 +60,36 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 10,
     color: "#F39A9D",
   },
+  description:{
+    marginTop: 10
+  }
 }));
 
 const projects = [
   {
     name: "Beefin'",
     tags: ["React.js", "Java Spring Boot"],
-    description: "Lorem ipsum",
-    link: "",
+    description: "This was a semester-long project for a class at Pitt. I served as one of the frontend engineers who was responsible for connecting the backend to the frontend and creating an aesthetic UI for our application. The application was a workout tracker with a social component that allowed users to add friends, join groups, and compete with each other.",
+    link: "https://github.com/Steven-Jarmell/Beefin",
   },
   {
-    name: "Beefin'",
-    tags: ["React.js", "Java Spring Boot"],
-    description: "Lorem ipsum",
-    link: "",
+    name: "Habits Track",
+    tags: ["Python"],
+    description: "Habits Track is a simple Python project that's loosely based off of Habitica. The idea is to gamify daily activities, which allows me to 'earn' money that I can spend for rewards such as going out for dinner, watching a movie, or something along those lines. Habits Track is a tool that I use consistently and have been developing for over a year now",
+    link: "https://github.com/patelpratham11/habitsTrack",
   },
   {
-    name: "Beefin'",
-    tags: ["React.js", "Java Spring Boot"],
-    description: "Lorem ipsum",
-    link: "",
+    name: "Website",
+    tags: ["React.js", "Gatsby", "Material UI"],
+    description: "This is my third version of a personal website. Within each iteration, I try to learn new skills, techniques, and technologies. For this iteration, the goal was to create a well-designed and responsive UI that'll showcase my understanding of React and Material UI.",
+    link: "https://github.com/patelpratham11/portfolio",
   },
   {
-    name: "Beefin'",
-    tags: ["React.js", "Java Spring Boot"],
-    description: "Lorem ipsum",
-    link: "",
+    name: "BookBot",
+    tags: ["SMTP", "Python"],
+    description: "BookBot was a simple application I created to learn more about SMTP and connecting to a mail server via script. The script takes whatever files from a certain directory, emails them to an email of your choice, and then purges the directory. I personally use it to send bulk items to my Kindle.",
+    link: "https://github.com/patelpratham11/BookBot",
   },
-  {
-    name: "Beefin'",
-    tags: ["React.js", "Java Spring Boot"],
-    description: "Lorem ipsum",
-    link: "",
-  },
-  // {
-  //     name: "Beefin'",
-  //     tags: ["React.js", "Java Spring Boot"],
-  //     description: "Lorem ipsum",
-  //     link: ""
-  // },
-  // {
-  //     name: "Beefin'",
-  //     tags: ["React.js", "Java Spring Boot"],
-  //     description: "Lorem ipsum",
-  //     link: ""
-  // },
-  // {
-  //     name: "Beefin'",
-  //     tags: ["React.js", "Java Spring Boot"],
-  //     description: "Lorem ipsum",
-  //     link: ""
-  // }
 ];
 
 export default function Projects() {
@@ -149,7 +128,7 @@ export default function Projects() {
                         <Typography variant="h4" style={{ color: "#F39A9D" }}>
                           {project.name}
                         </Typography>
-                        <Typography variant="subtitle2">
+                        <Typography variant="subtitle2" className={styles.description}>
                           {project.description}
                         </Typography>
                         <Grid container justifyContent="space-between">
@@ -160,7 +139,6 @@ export default function Projects() {
                               </IconButton>
                             </Link>
                           </Grid>
-                          <Hidden xsDown>
                             <Grid
                               item
                               className={styles.projectExtra}
@@ -172,7 +150,6 @@ export default function Projects() {
                                 );
                               })}
                             </Grid>
-                          </Hidden>
                         </Grid>
                       </CardContent>
                     </Card>

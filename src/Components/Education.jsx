@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
   },
   pittInfo:{
     textAlign: "left",
-    marginBottom: 10
+    margin: 10
   }
   
 }));

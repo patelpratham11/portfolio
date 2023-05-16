@@ -61,7 +61,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#F39A9D",
   },
   description:{
-    marginTop: 10
+    marginTop: 10,
+    textAlign: "left"
   }
 }));
 

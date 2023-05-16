@@ -51,6 +51,9 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 10,
     color: "#F39A9D",
   },
+  description:{
+    textAlign: "left",
+  }
 }));
 
 const experiences = [
@@ -112,7 +115,7 @@ export default function Experience() {
                       })}
                     </Grid>
 
-                    <Typography variant="subtitle1">
+                    <Typography variant="subtitle1" className={styles.description}>
                       {experience.description}
                     </Typography>
                   </Grid>

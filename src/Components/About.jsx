@@ -46,6 +46,10 @@ const useStyles = makeStyles((theme) => ({
     display: "block",
     border: "3px solid black", 
     borderRadius: "10%",
+  },
+  description:{
+    marginTop: 10,
+    textAlign: "left"
   }
 }));
 
@@ -68,7 +72,7 @@ export default function About() {
             <Grid item>
               <Card variant="outlined">
                 <CardContent>
-                  <Typography variant="subtitle1">
+                  <Typography variant="subtitle1" className={styles.description}>
                     My name is Pratham Patel and I am a senior at the University
                     of Pittburgh. I study CS with a minor in Chemistry, which allows me to grow in many diverse ways. I'm an incoming intern at Protiviti, I've been an intern at PNC, and I've been an undergraduate researcher for the past 2.5 years. Outside of creating things and tinkering with new technologies, I love photography and editing. The hero picture for this site's landing page is one of my personal favorites!
                   </Typography>

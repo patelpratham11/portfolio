@@ -18,12 +18,14 @@ const useStyles = makeStyles((theme) =>({
     }, 
     gridContainer:{
         height: "100%",
-        zIndex: 100
+        zIndex: 100,
+        marginTop: 200
     }, 
     name:{
         backgroundColor: "rgba(0,0,0,0.4)", 
         color: "#DCCCBB",
-        fontFamily: "system-ui"
+        fontFamily: "system-ui",
+        marginBottom: 170
     }, 
     backgroundImage:{
         height: "100%", 
@@ -44,10 +46,10 @@ export default function Landing() {
   return (
     
     <Box className={styles.section}>
-        <StaticImage className={styles.backgroundImage} src='http://drive.google.com/uc?export=view&id=1x_e3i256dE-khO3QRXaHBYLLB6e6AkDZ'/>
+        <StaticImage className={styles.backgroundImage} src='http://drive.google.com/uc?export=view&id=1aPO_rii9zU75_B68f2Z12EP9WVPDDWK8'/>
         <Container maxWidth="lg" className={styles.container}>
             <Slide in={show} direction='right'>
-                <Grid container alignItems='center' justifyContent='space-between' className={styles.gridContainer}>
+                <Grid container justifyContent='space-between' className={styles.gridContainer}>
                     <Grid item>
                         <Typography variant='h2' className={styles.name} >Hi, I'm Pratham!</Typography>
                     </Grid>

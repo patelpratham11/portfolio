@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 20,
     color: "#DCCCBB",
     "&:hover": {
-      color: "#51A3A3"
+      color: "#51A3A3",
     },
   },
   avatar: {

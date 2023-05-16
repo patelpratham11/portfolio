@@ -18,7 +18,14 @@ const darkTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: "system-ui"
+    
+    fontFamily: "system-ui",
+    h5:{
+        color: "#51A3A3"
+    },
+    subtitle2:{
+      color: "#51A3A3"
+  },
   },
 });
 

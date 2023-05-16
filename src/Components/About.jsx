@@ -38,13 +38,13 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "system-ui"
   },
   image:{
-    margin: 10,
+    margin: 20,
     marginLeft: "auto",
     marginRight: "auto",
     width: "60%",
     maxWidth: "50vh",
     display: "block",
-    border: "5px solid black", 
+    border: "3px solid black", 
     borderRadius: "10%",
   }
 }));
@@ -81,7 +81,7 @@ export default function About() {
                   </Typography>
                 </CardContent>
                 <CardMedia>
-                <StaticImage className={styles.image} src='http://drive.google.com/uc?export=view&id=1x_e3i256dE-khO3QRXaHBYLLB6e6AkDZ'/>
+                <StaticImage className={styles.image} src='http://drive.google.com/uc?export=view&id=18j8VeSJWoNdUsN1j9BsVICB7hMZrZciG'/>
                 </CardMedia>
               </Card>
             </Grid>

@@ -55,13 +55,14 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     "&:hover": {
       boxShadow: "2px 3px 20px 10px black"
-    },
+    }
   },
   card:{
     "&:hover": {
       boxShadow: "2px 3px 20px 10px black"
     },
-  }
+  },
+  
 }));
 
 const certificates = [
@@ -100,13 +101,13 @@ export default function Education() {
                     <Typography variant="h5">
                       University of Pittsburgh
                     </Typography>
-                    <Typography variant="subtitle2">Computer Science major with Chemistry minor</Typography>
+                    <Typography variant="subtitle1">Computer Science major with Chemistry minor</Typography>
                     <Chip label="GPA: 3.4"></Chip>
                   </CardContent>
                 </Card>
               </Grid>
             </Grid>
-            <Typography className={styles.name} variant="h4">
+            <Typography className={styles.name} variant="h2">
               Certificates
             </Typography>
             <Grid
@@ -121,7 +122,7 @@ export default function Education() {
                   <Grid item md={5} key={certificate.name}>
                     <Card className={styles.cert}>
                       <CardContent className={styles.pitt}>
-                        <Typography variant="h6">
+                        <Typography variant="h5">
                           {certificate.name}
                         </Typography>
                         <Typography variant="subtitle3">{certificate.issuer} </Typography>

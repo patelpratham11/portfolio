@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from "react";
 import {
   makeStyles,
-  Paper,
   Typography,
   Container,
   Slide,
   Grid,
   Card,
   Box,
+  CardContent,
+  Chip,
 } from "@material-ui/core";
-
 
 const useStyles = makeStyles((theme) => ({
   section: {
     height: "100%",
     background: "#4D6A6D",
-    margin: 25,
-    padding: 10
+    margin: 10,
+    padding: 10,
   },
   container: {
     height: "100%",
-    alignItems:"center",
-    justifyContent:"center",
+    alignItems: "center",
+    justifyContent: "center",
   },
   gridContainer: {
     // minHeight: "100vh",
@@ -34,7 +34,9 @@ const useStyles = makeStyles((theme) => ({
   name: {
     color: "#DCCCBB",
     marginTop: 5,
-    fontFamily: "system-ui"
+    fontFamily: "system-ui",
+    textAlign: "center",
+    marginBottom: 10,
   },
   experienceCard: {
     marginTop: 15,
@@ -42,54 +44,94 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     textAlign: "center",
     padding: "2%",
+    "&:hover": {
+      boxShadow: "2px 3px 20px 10px black"
+    },
   },
+  pitt: {
+    textAlign: "center",
+  },
+  cert: {
+    width: "100%",
+    "&:hover": {
+      boxShadow: "2px 3px 20px 10px black"
+    },
+  },
+  card:{
+    "&:hover": {
+      boxShadow: "2px 3px 20px 10px black"
+    },
+  }
 }));
 
-const experiences = [
+const certificates = [
   {
-    name: "PNC",
-    description:
-      "I also had the opportunity to spend a summer as an intern at PNC bank. I was a part of the Enterprise Data Risk Management (EDRM) Strategies Team. For 10-weeks, I was placed on this team in order to collaborate, present, identify, report, and manage risks that were surrounding the data. Our main objective was to effective manage and mitigate risks surrounding incomplete and inaccurate data. I assisted new programs set out by PNC regarding data use, data risks, and data quality. I worked heavily with the Analytics Competency Center and Model Risk Management throughout my various projects.My main project was to help collect and reconcile data ahead of an AI/ML audit that was coming in August 2022. I also played an integral part in chartering a new pilot program to keep track of which LOBs are using which platforms. We heavily leveraged database-related technologies such as Excel, Hadoop, and some SQL.",
+    name: "Python Data Science",
+    issuer: "NASBA",
   },
   {
-    name: "PNC",
-    description:
-      "I also had the opportunity to spend a summer as an intern at PNC bank. I was a part of the Enterprise Data Risk Management (EDRM) Strategies Team. For 10-weeks, I was placed on this team in order to collaborate, present, identify, report, and manage risks that were surrounding the data. Our main objective was to effective manage and mitigate risks surrounding incomplete and inaccurate data. I assisted new programs set out by PNC regarding data use, data risks, and data quality. I worked heavily with the Analytics Competency Center and Model Risk Management throughout my various projects.My main project was to help collect and reconcile data ahead of an AI/ML audit that was coming in August 2022. I also played an integral part in chartering a new pilot program to keep track of which LOBs are using which platforms. We heavily leveraged database-related technologies such as Excel, Hadoop, and some SQL.",
+    name: "Management Frameworks",
+    issuer: "American Banker's Association",
   },
   {
-    name: "PNC",
-    description:
-      "I also had the opportunity to spend a summer as an intern at PNC bank. I was a part of the Enterprise Data Risk Management (EDRM) Strategies Team. For 10-weeks, I was placed on this team in order to collaborate, present, identify, report, and manage risks that were surrounding the data. Our main objective was to effective manage and mitigate risks surrounding incomplete and inaccurate data. I assisted new programs set out by PNC regarding data use, data risks, and data quality. I worked heavily with the Analytics Competency Center and Model Risk Management throughout my various projects.My main project was to help collect and reconcile data ahead of an AI/ML audit that was coming in August 2022. I also played an integral part in chartering a new pilot program to keep track of which LOBs are using which platforms. We heavily leveraged database-related technologies such as Excel, Hadoop, and some SQL.",
+    name: "AI Foundations: Machine Learning",
+    issuer: "LinkedIn Learning",
   },
 ];
 
-export default function Experience() {
+export default function Education() {
   const styles = useStyles();
   const [show, setShow] = useState(false);
   useEffect(() => {
     setShow(true);
   }, []);
   return (
-    <Box className={styles.section}>
+    <Box className={styles.section} id="Education">
       <Container className={styles.container}>
         <Slide in={show} direction="right">
-          <Grid container className={styles.gridContainer} direction="row">
-            <Grid item>
-              <Typography variant="h2" className={styles.name}>
-                Experience
-              </Typography>
-            </Grid>
-            {experiences.map((experience) => {
-              return (
-                <Card className={styles.experienceCard} variant="outlined">
-                  <Typography variant="h4" style={{color: "#F39A9D"}}>{experience.name}</Typography>
-                  <Typography variant="subtitle2">
-                    {experience.description}
-                  </Typography>
+          <Box>
+            <Typography variant="h2" className={styles.name}>
+              Education
+            </Typography>
+            <Grid container className={styles.gridContainer}>
+              <Grid item>
+                <Card className={styles.card}>
+                  <CardContent className={styles.pitt}>
+                    <Typography variant="h5">
+                      University of Pittsburgh
+                    </Typography>
+                    <Typography variant="subtitle2">Computer Science major with Chemistry minor</Typography>
+                    <Chip label="GPA: 3.4"></Chip>
+                  </CardContent>
                 </Card>
-              );
-            })}
-          </Grid>
+              </Grid>
+            </Grid>
+            <Typography className={styles.name} variant="h4">
+              Certificates
+            </Typography>
+            <Grid
+              container
+              className={styles.gridContainer}
+              spacing={2}
+              rowSpacing={2}
+              columnSpacing={{ xs: 10, sm: 20, md: 30 }}
+            >
+              {certificates.map((certificate) => {
+                return (
+                  <Grid item md={5} key={certificate.name}>
+                    <Card className={styles.cert}>
+                      <CardContent className={styles.pitt}>
+                        <Typography variant="h6">
+                          {certificate.name}
+                        </Typography>
+                        <Typography variant="subtitle3">{certificate.issuer} </Typography>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                );
+              })}
+            </Grid>
+          </Box>
         </Slide>
       </Container>
     </Box>

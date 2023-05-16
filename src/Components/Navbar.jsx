@@ -18,27 +18,23 @@ import { Menu, ChevronRightRounded } from "@material-ui/icons";
 const navLinks = [
   {
     name: "About",
-    href: "",
+    href: "#About",
   },
   {
     name: "Experience",
-    href: "",
+    href: "#Experience",
   },
   {
     name: "Projects",
-    href: "",
+    href: "#Projects",
   },
   {
     name: "Education",
-    href: "",
-  },
-  {
-    name: "Hobbies",
-    href: "",
+    href: "#Education",
   },
   {
     name: "Contact",
-    href: "",
+    href: "#Contact",
   },
 ];
 
@@ -46,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
   link: {
     marginRight: 20,
     color: "#DCCCBB",
+    "&:hover": {
+      color: "#51A3A3"
+    },
   },
   avatar: {
     marginRight: "auto",
@@ -60,7 +59,7 @@ export default function Navbar() {
 
   return (
     <AppBar position="sticky" color="default">
-      <Container maxWidth="md">
+      <Container>
         <Toolbar disableGutters>
           <Avatar className={styles.avatar}> P </Avatar>
           <Hidden xsDown>

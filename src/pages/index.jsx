@@ -7,6 +7,8 @@ import About from '../Components/About';
 import Projects from '../Components/Projects';
 import Experience from '../Components/Experience';
 import Education from '../Components/Education';
+import Contacts from '../Components/Contacts';
+import Footer from '../Components/Footer';
 
 const darkTheme = createTheme({
   palette: {
@@ -30,6 +32,8 @@ export default function index(){
     <Projects />
     <Experience />
     <Education />
+    <Contacts />
+    <Footer />
   </ThemeProvider>
   );
 }

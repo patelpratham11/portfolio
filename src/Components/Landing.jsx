@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) =>({
     name:{
         backgroundColor: "rgba(0,0,0,0.4)", 
         color: "#DCCCBB",
-        width: "90%",
         fontFamily: "system-ui"
     }, 
     backgroundImage:{

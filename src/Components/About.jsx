@@ -10,19 +10,21 @@ import {
   CardMedia,
   CardContent,
 } from "@material-ui/core";
+import { StaticImage } from "gatsby-plugin-image";
 
 const useStyles = makeStyles((theme) => ({
   section: {
     height: "fit-content",
-    minHeight: "100vh",
+    minHeight: "100%",
     // zIndex: 100,
     background: "#4D6A6D",
-    margin: 25,
-    padding: 10
+    margin: 10,
+    padding: 10,
   },
   container: {
     height: "100%",
     zIndex: 100, 
+    
   },
   gridContainer: {
     height: "100%",
@@ -35,6 +37,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 5,
     fontFamily: "system-ui"
   },
+  image:{
+    margin: 10,
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "60%",
+    maxWidth: "50vh",
+    display: "block",
+    border: "5px solid black", 
+    borderRadius: "10%",
+  }
 }));
 
 export default function About() {
@@ -44,7 +56,7 @@ export default function About() {
     setShow(true);
   }, []);
   return (
-    <Box className={styles.section}>
+    <Box className={styles.section} id="About">
       <Container className={styles.container}>
         <Slide in={show} direction="right">
           <Grid container className={styles.gridContainer}>
@@ -56,7 +68,7 @@ export default function About() {
             <Grid item>
               <Card variant="outlined">
                 <CardContent>
-                  <Typography variant="h6">
+                  <Typography variant="subtitle1">
                     My name is Pratham Patel and I am a Junior at the University
                     of Pittburgh. I am currently studying Computer Science with
                     a minor in Chemistry. Outside of classes, I love to read,
@@ -68,6 +80,9 @@ export default function About() {
                     accomplished, and most importantly, myself.
                   </Typography>
                 </CardContent>
+                <CardMedia>
+                <StaticImage className={styles.image} src='http://drive.google.com/uc?export=view&id=1x_e3i256dE-khO3QRXaHBYLLB6e6AkDZ'/>
+                </CardMedia>
               </Card>
             </Grid>
           </Grid>

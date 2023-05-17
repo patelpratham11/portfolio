@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "50vh",
     display: "block",
     border: "3px solid black", 
-    borderRadius: "10%",
+    // borderRadius: "10%",
   },
   description:{
     marginTop: 10,
@@ -73,8 +73,8 @@ export default function About() {
               <Card variant="outlined">
                 <CardContent>
                   <Typography variant="subtitle1" className={styles.description}>
-                    My name is Pratham Patel and I am a senior at the University
-                    of Pittburgh. I study CS with a minor in Chemistry, which allows me to grow in many diverse ways. I'm an incoming intern at Protiviti, I've been an intern at PNC, and I've been an undergraduate researcher for the past 2.5 years. Outside of creating things and tinkering with new technologies, I love photography and editing. The hero picture for this site's landing page is one of my personal favorites!
+                    My name is Pratham Patel, I am a senior at the University
+                    of Pittsburgh. I study CS with a minor in Chemistry, which allows me to grow in many diverse ways. I'm an incoming intern at Protiviti this summer, where I look forward to jump into the world of consulting. I've been an intern at PNC, learning new skills and technologies that are currently used in the industry right now. And I've been an undergraduate researcher for the past 2.5 years where I create scripts to analyze large amounts of data related to Alzheimer's Disease. Outside of creating things and tinkering with new technologies, I love photography and editing. The hero picture for this site's landing page is one of my personal favorites!
                   </Typography>
                 </CardContent>
                 <CardMedia>

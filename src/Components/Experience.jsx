@@ -70,7 +70,7 @@ const experiences = [
     tags: ["Data", "Risk", "MS Excel"],
   },
   {
-    name: "Mathy Lab",
+    name: "Mathys Lab",
     description:
       "I have worked under Dr. Hansruedi Mathys at the University of Pittsburgh's Neurobiology department as one of the lead tech students. I developed many scripts in order to analyze datasets upwards of 50gb. We worked with Single Cell RNA Sequencing data from the ROSMAP cohort from Rush University in order to understand the cellular and molecular reasons behind Alzheimer's Disease and variances within phenotypic expressions.",
     tags: ["R", "Python"],

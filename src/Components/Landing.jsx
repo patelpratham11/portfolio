@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) =>({
         // backgroundColor: "rgba(0,0,0,0.4)", 
         color: "#DCCCBB",
         fontFamily: "system-ui",
-        marginBottom: 170
+        marginBottom: 170,
+        textShadow: "-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000"
     }, 
     backgroundImage:{
         height: "100%", 

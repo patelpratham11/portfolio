@@ -7,6 +7,7 @@ import About from '../Components/About';
 import Projects from '../Components/Projects';
 import Experience from '../Components/Experience';
 import Education from '../Components/Education';
+import Skills from '../Components/Skills';
 import Contacts from '../Components/Contacts';
 import Footer from '../Components/Footer';
 
@@ -39,6 +40,7 @@ export default function index(){
     <Projects />
     <Experience />
     <Education />
+    <Skills />
     <Contacts />
     <Footer />
   </ThemeProvider>

@@ -60,7 +60,7 @@ const experiences = [
   {
     name: "Protiviti",
     description:
-      "I am an in-coming Technology Consultant Intern at Protiviti inc. This summer I will be working with the Emerging Technology Group (ETG). I plan on learning more about networking, client-facing roles, building and maintaining relationships, and becoming well-versed in the different groups of technology and the needs the industry faces right now",
+      "I am an in-coming Technology Consultant Intern at Protiviti inc. This summer I will be working with the Emerging Technology Group (ETG). I plan on learning more about networking, client-facing roles, building and maintaining relationships, and becoming well-versed in the different groups of technology and the needs the industry faces right now.",
     tags: ["ETG", "Consulting"],
   },
   {

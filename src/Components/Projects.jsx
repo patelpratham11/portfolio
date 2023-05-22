@@ -76,7 +76,7 @@ const projects = [
   {
     name: "Habits Track",
     tags: ["Python"],
-    description: "Habits Track is a simple Python project that's loosely based off of Habitica. The idea is to gamify daily activities, which allows me to 'earn' money that I can spend for rewards such as going out for dinner, watching a movie, or something along those lines. Habits Track is a tool that I use consistently and have been developing for over a year now",
+    description: "Habits Track is a simple Python project that's loosely based off of Habitica. The idea is to gamify daily activities, which allows me to 'earn' money that I can spend for rewards such as going out for dinner, watching a movie, or something along those lines. Habits Track is a tool that I use consistently and have been developing for over a year now.",
     link: "https://github.com/patelpratham11/habitsTrack",
   },
   {
@@ -129,7 +129,7 @@ export default function Projects() {
                         <Typography variant="h4" style={{ color: "#F39A9D" }}>
                           {project.name}
                         </Typography>
-                        <Typography variant="subtitle2" className={styles.description}>
+                        <Typography variant="subtitle1" className={styles.description}>
                           {project.description}
                         </Typography>
                         <Grid container justifyContent="space-between">

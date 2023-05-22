@@ -33,6 +33,10 @@ const navLinks = [
     href: "#Education",
   },
   {
+    name: "Skills",
+    href: "#Skills",
+  },
+  {
     name: "Contact",
     href: "#Contact",
   },
@@ -104,6 +108,7 @@ export default function Navbar() {
                   href={link.href}
                   variant="button"
                   underline="none"
+                  onClick={() => setDrawer(false)}
                 >
                   {link.name}
                 </Link>

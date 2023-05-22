@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) =>({
         zIndex: 100, 
     }, 
     typer:{
-        marginBottom: 300, 
+        // position: "relative",
+        // marginTop: 2, 
         zIndex: 120,
         backgroundColor: "rgba(0,0,0,0.6)", 
         color: "#F3DFA2",
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) =>({
         // backgroundColor: "rgba(0,0,0,0.4)", 
         color: "#DCCCBB",
         fontFamily: "system-ui",
-        marginBottom: 170,
+        // marginBottom: 170,
         textShadow: "-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000"
     }, 
     backgroundImage:{
@@ -60,8 +61,8 @@ export default function Landing() {
         <StaticImage className={styles.backgroundImage} src='http://drive.google.com/uc?export=view&id=1aPO_rii9zU75_B68f2Z12EP9WVPDDWK8'/>
         <Container maxWidth="lg" className={styles.container}>
             <Slide in={show} direction='right'>
-                <Grid container justifyContent='space-between' className={styles.gridContainer}>
-                    <Grid item >
+                <Grid container justifyContent='space-between' className={styles.gridContainer} rowSpacing={{ xs: 10, sm: 20, md: 30 }} columnSpacing={{ xs: 40, sm: 60, md: 90 }}>
+                    <Grid item md={6}>
                         <Typography variant='h2' className={styles.name} >Hi, I'm Pratham!</Typography>
                         <Typography variant='h4' className={styles.typer} ><Typed
                     strings={[
@@ -77,22 +78,6 @@ export default function Landing() {
                         loop >
                     </Typed></Typography>
                     </Grid>
-                    {/* <Grid item >
-                    <Typography variant='h4' className={styles.typer} ><Typed
-                    strings={[
-                        'I am a student',
-                        'I am a developer',
-                        'I am a learner',
-                        'I am a photographer',
-                        'I am an engineer',
-                        'I am an opportunity',
-                        ]}
-                        typeSpeed={40}
-                        backSpeed={50}
-                        loop >
-                    </Typed></Typography>
-                        
-                    </Grid> */}
                     <Hidden xsDown>
                         <Grid item>
                             <Socials/>

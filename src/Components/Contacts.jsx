@@ -72,7 +72,7 @@ export default function Contacts() {
               rowSpacing={2}
               columnSpacing={{ xs: 1, sm: 2, md: 3, lg: 4 }}>
             <Grid item xs={8}>
-                <Typography variant='subtitle1'> I would love for you to get in touch with me! Feel free to contact me via any of the methods below. To see more of my work, head over to my GitHub page</Typography>
+                <Typography variant='subtitle1'> I would love for you to get in touch with me! Feel free to contact me via any of the methods. To see more of my work, head over to my GitHub page!</Typography>
             </Grid>
             <Grid item xs={3}>
                 <Socials />

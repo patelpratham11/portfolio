@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   makeStyles,
-  Paper,
   Typography,
   Container,
   Slide,
@@ -9,7 +8,6 @@ import {
   Card,
   IconButton,
   Chip,
-  Hidden,
   CardContent,
   Box,
 } from "@material-ui/core";

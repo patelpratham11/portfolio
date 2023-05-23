@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Paper } from '@material-ui/core'
 import { makeStyles, Grid, Container, Typography, Hidden, Slide, Box } from '@material-ui/core'
 import { StaticImage } from 'gatsby-plugin-image'
 import Socials from './Socials'

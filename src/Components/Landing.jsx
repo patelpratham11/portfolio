@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) =>({
     name:{
         // backgroundColor: "rgba(0,0,0,0.4)", 
         color: "#DCCCBB",
-        fontFamily: "system-ui",
+        fontFamily: "Bookman, serif",
         // marginBottom: 170,
         textShadow: "-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000"
     }, 
@@ -69,6 +69,7 @@ export default function Landing() {
                         'I am a developer',
                         'I am a learner',
                         'I am a photographer',
+                        'I am a consultant',
                         'I am an engineer',
                         'I am an opportunity',
                         ]}

@@ -15,7 +15,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   section: {
     height: "100%",
-    background: "#4D6A6D",
+    background: "#4D818F",
     margin: 10,
     boxShadow: 12,
     padding: 10,
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   name: {
     color: "#DCCCBB",
     marginTop: 5,
-    fontFamily: "system-ui",
+    fontFamily: "monospace",
     textAlign: "center",
   },
   skillGrid: {
@@ -79,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const languages = [
-    "Java", "Python", "JavaScript", "Rust", "R"
+    "Java", "Python", "JavaScript", "Rust", "R", "SQL", "KQL", "MicroPython"
 ]
 
 const libraries = [
@@ -87,15 +87,15 @@ const libraries = [
 ]
 
 const concepts = [
-    "OOP", "Agile", "Team-Based Development", "Responsive Design", "SMTP", 
+    "OOP", "Agile", "Team-Based Development", "Responsive Design", "SMTP", "Soldering", "CI/CD", "Kubernetes", "Docker"
 ]
 
 const softSkills = [
-    "Communication", "Leadership", "Team Work", "Adaptability"
+    "Communication", "Leadership", "Team Work", "Adaptability", "Consulting", "Curiosity"
 ]
 
 const softwares = [
-    "Git", "Adobe Tools", "Microsoft Suite", "OBS"
+    "Git", "Adobe Tools", "Microsoft Suite", "OBS", "MS Azure", "GitLab", "Azure Dev Ops", "Google Cloud Platform"
 ]
 
 const hobbies = [
@@ -129,7 +129,7 @@ export default function Skills() {
                 <Typography variant="h3">Technical</Typography>
                 <Card className={styles.skillCard}>
                   <CardContent>
-                    <Typography variant="h4">Languages</Typography>
+                    <Typography variant="h4"style={{ color: "#F39A9D", fontFamily: "monospace" }}> Languages</Typography>
                     {languages.map((language) =>{
                         return(
                             <Chip label={language} className={styles.chip} />
@@ -139,7 +139,7 @@ export default function Skills() {
                 </Card>
                 <Card className={styles.skillCard}>
                   <CardContent>
-                    <Typography variant="h4">Frameworks</Typography>
+                    <Typography variant="h4"style={{ color: "#F39A9D", fontFamily: "monospace" }}>Frameworks</Typography>
                     {libraries.map((library) =>{
                         return(
                             <Chip label={library} className={styles.chip} />
@@ -149,7 +149,7 @@ export default function Skills() {
                 </Card>
                 <Card className={styles.skillCard}>
                   <CardContent>
-                    <Typography variant="h4">Concepts</Typography>
+                    <Typography variant="h4"style={{ color: "#F39A9D", fontFamily: "monospace" }}>Concepts</Typography>
                     {concepts.map((concept) =>{
                         return(
                             <Chip label={concept} className={styles.chip} />
@@ -162,7 +162,7 @@ export default function Skills() {
                 <Typography variant="h3">Non-Technical</Typography>
                 <Card className={styles.skillCard}>
                   <CardContent>
-                    <Typography variant="h4">Soft-Skills</Typography>
+                    <Typography variant="h4"style={{ color: "#F39A9D", fontFamily: "monospace" }}>Soft-Skills</Typography>
                     {softSkills.map((skill) =>{
                         return(
                             <Chip label={skill} className={styles.chip} />
@@ -172,7 +172,7 @@ export default function Skills() {
                 </Card>
                 <Card className={styles.skillCard}>
                   <CardContent>
-                    <Typography variant="h4">Softwares</Typography>
+                    <Typography variant="h4"style={{ color: "#F39A9D", fontFamily: "monospace" }}>Softwares</Typography>
                     {softwares.map((software) =>{
                         return(
                             <Chip label={software} className={styles.chip} />
@@ -182,7 +182,7 @@ export default function Skills() {
                 </Card>
                 <Card className={styles.skillCard}>
                   <CardContent>
-                    <Typography variant="h4">Misc.</Typography>
+                    <Typography variant="h4"style={{ color: "#F39A9D", fontFamily: "monospace" }}>Misc.</Typography>
                     {hobbies.map((hobby) =>{
                         return(
                             <Chip label={hobby} className={styles.chip} />

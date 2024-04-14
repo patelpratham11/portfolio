@@ -14,7 +14,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   section: {
     height: "100%",
-    background: "#4D6A6D",
+    background: "#4D818F",
     margin: 10,
     padding: 10,
   },
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   name: {
     color: "#DCCCBB",
     marginTop: 5,
-    fontFamily: "system-ui",
+    fontFamily: "monospace",
   },
   experienceCard: {
     marginTop: 15,
@@ -59,8 +59,8 @@ const experiences = [
   {
     name: "Protiviti",
     description:
-      "I am an in-coming Technology Consultant Intern at Protiviti inc. This summer I will be working with the Emerging Technology Group (ETG). I plan on learning more about networking, client-facing roles, building and maintaining relationships, and becoming well-versed in the different groups of technology and the needs the industry faces right now.",
-    tags: ["ETG", "Consulting"],
+      "I worked as a part of the Emerging Technologies Group, where I assisted in various different ways across the organization. I learned more about different AI models and experienced both using them and understanding the backend code. I looked specifically into NLP and Generative AI models. I also worked with the IoT Team to help support projects around the Raspberry Pi Pico and some embedded systems work.",
+    tags: ["ETG", "Consulting", "AI", "IoT"],
   },
   {
     name: "PNC",
@@ -71,7 +71,7 @@ const experiences = [
   {
     name: "Mathys Lab",
     description:
-      "I have worked under Dr. Hansruedi Mathys at the University of Pittsburgh's Neurobiology department as one of the lead tech students. I developed many scripts in order to analyze datasets upwards of 50gb. We worked with Single Cell RNA Sequencing data from the ROSMAP cohort from Rush University in order to understand the cellular and molecular reasons behind Alzheimer's Disease and variances within phenotypic expressions.",
+      "I have worked under Dr. Hansruedi Mathys at the University of Pittsburgh's Neurobiology department as one of the lead tech students. I developed many scripts in order to analyze datasets upwards of 50gb. We worked with Single Cell RNA Sequencing data from the ROSMAP cohort from Rush University in order to understand the cellular and molecular reasons behind Alzheimer's Disease and variances within phenotypic expressions. I have co-authored 1 paper in the Mathys Lab. ",
     tags: ["R", "Python"],
   },
   {
@@ -104,7 +104,7 @@ export default function Experience() {
                 <Card className={styles.experienceCard} variant="outlined">
                   <Grid container justifyContent="space-between">
                     <Grid item>
-                      <Typography variant="h4" style={{ color: "#F39A9D" }}>
+                      <Typography variant="h4" style={{ color: "#F39A9D", fontFamily: "monospace" }}>
                         {experience.name}
                       </Typography>
                     </Grid>

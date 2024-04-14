@@ -12,7 +12,7 @@ import {
   const useStyles = makeStyles((theme) => ({
     section: {
       height: "100%",
-      background: "#4D6A6D",
+      background: "#4D818F",
       margin: 10,
       padding: 10,
     },
@@ -32,7 +32,7 @@ import {
     name: {
       color: "#DCCCBB",
       marginTop: 5,
-      fontFamily: "system-ui",
+      fontFamily: "monospace",
       textAlign: "center",
       marginBottom: 10,
     },

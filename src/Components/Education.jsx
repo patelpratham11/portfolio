@@ -14,7 +14,7 @@ import {
 const useStyles = makeStyles((theme) => ({
   section: {
     height: "100%",
-    background: "#4D6A6D",
+    background: "#4D818F",
     margin: 10,
     padding: 10,
   },
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   name: {
     color: "#DCCCBB",
     marginTop: 5,
-    fontFamily: "system-ui",
+    fontFamily: "monospace",
     textAlign: "center",
     marginBottom: 10,
   },
@@ -107,7 +107,7 @@ export default function Education() {
                     </Typography>
                     <Typography variant="subtitle1" className={styles.pittInfo}> Major: Computer Science </Typography>
                     <Typography variant="subtitle1" className={styles.pittInfo}> Minor: Chemistry</Typography>
-                    <Chip label="GPA: 3.4"></Chip>
+                    <Chip label="GPA: 3.51"></Chip>
                   </CardContent>
                 </Card>
               </Grid>
